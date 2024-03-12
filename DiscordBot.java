@@ -22,7 +22,7 @@ public class DiscordBot {
         String token = privateToken.getDiscordToken();
         JDA jda = JDABuilder.create(token, Arrays.asList(INTENTS))
                 .enableCache(CacheFlag.VOICE_STATE)
-                .setActivity(Activity.playing("dashingMID1"))
+                .setActivity(Activity.playing("Bot"))
                 .setStatus(OnlineStatus.ONLINE)
                 .build();
     }
